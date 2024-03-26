@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+void drawSquare(int sideLength) {
+    // Drawing rows
+    for (int i = 0; i < sideLength; i++) {
+        // Drawing columns
+        for (int j = 0; j < sideLength; j++) {
+            cout << "* ";
+        }
+        // Ending the row and moving to the next line
+        cout << endl;
+    }
+}
+
+int main() {
+    int side;
+    cout << "Enter the side length of the square: ";
+    cin >> side;
+
+    // Calling the function to draw the square
+    drawSquare(side);
+
+    return 0;
+}
